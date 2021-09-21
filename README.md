@@ -1,7 +1,7 @@
 # vous-etes-le-heros
 Travail1 
 Titre : Libère ton stress!
-**Genre**: Sci-Fi, Action, Aliens
+**Genre**: Comédie, 
 **Inspiration** : Sans objets
 
 <h2>Diagramme<h2> 

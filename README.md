@@ -4,4 +4,6 @@ Titre : Libère ton stress!
 **Genre**: Comédie, 
 **Inspiration** : Sans objets   
 
-<h2>Diagramme<h2> ;
+<h2>Diagramme<h2> 
+
+

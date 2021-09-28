@@ -5,4 +5,5 @@ Titre : Libère ton stress!
 **Inspiration** : Sans objets 
 
 <h2>Diagramme<h2> 
-![Texte alternatif de l'image](..\Git\vous-etes-le-heros\diagrammeFini.jpg)
+![plot](./Git/vous-etes-le-heros/diagrammeFini.jpg)
+

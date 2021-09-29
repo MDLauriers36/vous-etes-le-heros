@@ -8,15 +8,15 @@ let premier_chapitre = {
   let aucune_aide = {
     subtitle: "Sed ut perspiciatis",
     text:"Le commis ne peut pas vous aider",
-    img: fa,
-    options = ["Douter de ses compétences", "Vous plaindre", "Rien faire"]
+    img: (Git/vous-etes-le-heros/diagrammeFini.jpg),
+    options : ["Douter de ses compétences", "Vous plaindre", "Rien faire"]
   };
 
   let deux_mille = {
     subtitle: "Sed ut perspiciatis",
     text:"Le commis vous affirme qu'il a plus de 2000 produits différents dans son magasin et ne peut pas tous les connaitre. Que voulez-vous faire?",
     img: af,
-    options = ["Passer à autre chose", "Appeler le gérant", "Saluer l'employé et partir"]
+    options : ["Passer à autre chose", "Appeler le gérant", "Saluer l'employé et partir"]
     
   };
 
@@ -24,43 +24,46 @@ let premier_chapitre = {
     subtitle: "Sed ut perspiciatis",
     text:"Partie perdue. Retour à la première question (Rappelez-vous que vous devez embeter le plus de personnes possibles.",
     img: af,
-    options = ["Douter de ses compétences", "Vous plaindre", "Rien faire"]
+    options : ["Douter de ses compétences", "Vous plaindre", "Rien faire"]
   };
   let gerant_aide = {
     subtitle: "Sed ut perspiciatis",
     text:"Le gérant vous a aidé à trouver votre produit.",
     img: af,
-    options = ["Le remercier", "Dire que son employé doit être mieux formé", "Rien faire"]
+    options : ["Le remercier", "Dire que son employé doit être mieux formé", "Rien faire"]
   };
 
   let commis_calme = {
     subtitle: "Sed ut perspiciatis",
     text:"Le commis vous demande de vous calmer. Que voulez-vous faire?",
     img: af,
-    options = ["Jouer la victime", "Hausser le ton", "Appeler le gérant"]
+    options : ["Jouer la victime", "Hausser le ton", "Appeler le gérant"]
   };
 
   let jouer_victime = {
     subtitle: "Sed ut perspiciatis",
     text:"Le commis vous propose d'appeler son gérant",
     img: af,
-    options = ["S'excuser", "Partir vers les caisses", "Rien faire"]
+    options : ["S'excuser", "Partir vers les caisses", "Rien faire"]
   };
 
   let partir_caisses = {
     subtitle: "Sed ut perspiciatis",
     text:"Alors que vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
     img: af,
-    options = ["Partir", "Demander le gérant", "Rien faire"]
+    options : ["Partir", "Demander le gérant", "Rien faire"]
   };
   let remboursement = {
     subtitle: "Sed ut perspiciatis",
     text:"Le gérant vous affirme qu'il est impossible de vous rembourser. Que voulez-vous faire?",
     img: af,
-    options = ["Partir", "Demander le gérant", "Rien faire"]
+    options : ["Partir", "Demander le gérant", "Rien faire"]
   };
 
-  
+  function goToChapters(chaptersName){
+    chapitre = chaptersObj.chapter
+    return chapitre;
+  }
 
   let chaptersObj = {
     l_arrivée : premier_chapitre,
@@ -72,6 +75,8 @@ let premier_chapitre = {
     victime = jouer_victime,
     caisse = partir_caisses,
     refund = remboursement,
+
+    goToChapters();
     
 }
 

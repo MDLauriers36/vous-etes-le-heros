@@ -7,5 +7,5 @@ Titre : Libère ton stress! <br>
 [Coolors.co](https://coolors.co/e6b89c-73937e-4d625a-273036-e6b89c)
 
 ## Diagramme 
-![Diagramme](https://github.com/MDLauriers36/vous-etes-le-heros/blob/main/diagrammeFini.jpg)
+![Diagramme](/Git/vous-etes-le-heros/diagrammeFini.jpg)
 

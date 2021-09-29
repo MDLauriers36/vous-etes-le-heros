@@ -5,5 +5,5 @@ Titre : Libère ton stress!
 **Inspiration** : Sans objets 
 
 <h2>Diagramme<h2> 
-![image](https://github.com/MDLauriers36/vous-etes-le-heros/blob/main/Git/html/Images/Gif/200.gif)
+!(https://github.com/MDLauriers36/vous-etes-le-heros/blob/main/Git/html/Images/Gif/200.gif)
 

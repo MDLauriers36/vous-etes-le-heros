@@ -1,3 +1,5 @@
+console.log("bonjour");
+
 let chaptersObj = {
   l_arrivée = premier_chapitre = {
     subtitle: "Sed ut perspiciatis",
@@ -59,6 +61,7 @@ let chaptersObj = {
 
   
 }
+
 /*
 
 let premier_chapitre = {

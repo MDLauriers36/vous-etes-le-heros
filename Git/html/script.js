@@ -53,5 +53,11 @@ let premier_chapitre = {
     
     text:"Alors que vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
     img: af,
-    options = ["Douter de ses compétences", "Vous plaindre", "Rien faire"]
+    options = ["Partir", "Demander le gérant", "Rien faire"]
+  };
+  let partir_caisses = {
+    
+    text:"Le gérant vous affirme qu'il est impossible de vous rembourser3.   Que voulez-vous faire?",
+    img: af,
+    options = ["Partir", "Demander le gérant", "Rien faire"]
   };

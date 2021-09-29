@@ -62,6 +62,13 @@ let chaptersObj = {
 }
 console.log(chaptersObj);
 
+function goToChapter(chapterName){
+  let chapitre = chaptersObj.chapterName;
+  return chapitre;
+  
+}
+console.log(goToChapter);
+
 /*
 
 let premier_chapitre = {

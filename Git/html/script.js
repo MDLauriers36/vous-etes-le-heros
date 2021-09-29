@@ -1,66 +1,66 @@
-console.log("bonjour");
 
 let chaptersObj = {
-  l_arrivée = premier_chapitre = {
+  l_arrivée : premier_chapitre = {
     subtitle: "Sed ut perspiciatis",
     text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    img: af
+    img: ("images/Gif/giphy.gif"),
   }
     ,
   no_help : aucune_aide = {
     subtitle: "Sed ut perspiciatis",
     text:"Le commis ne peut pas vous aider",
-    img: (Git/vous-etes-le-heros/diagrammeFini.jpg),
+    img: ("images/Gif/giphy.gif"),
     options : ["Douter de ses compétences", "Vous plaindre", "Rien faire"]
   },
 
   produits : deux_mille = {
   subtitle: "Sed ut perspiciatis",
   text:"Le commis vous affirme qu'il a plus de 2000 produits différents dans son magasin et ne peut pas tous les connaitre. Que voulez-vous faire?",
-  img: af,
+  img: ("images/Gif/giphy.gif"),
   options : ["Passer à autre chose", "Appeler le gérant", "Saluer l'employé et partir"]
   
 },
   autre : autre_chose = {
     subtitle: "Sed ut perspiciatis",
     text:"Partie perdue. Retour à la première question (Rappelez-vous que vous devez embeter le plus de personnes possibles.",
-    img: af,
+    img: ("images/Gif/giphy.gif"),
     options : ["Douter de ses compétences", "Vous plaindre", "Rien faire"]
   },
 
   respo_aide : gerant_aide = {
   subtitle: "Sed ut perspiciatis",
   text:"Le gérant vous a aidé à trouver votre produit.",
-  img: af,
+  img: ("images/Gif/giphy.gif"),
   options : ["Le remercier", "Dire que son employé doit être mieux formé", "Rien faire"]
 },
   commis_chill : commis_calme = {
     subtitle: "Sed ut perspiciatis",
     text:"Le commis vous demande de vous calmer. Que voulez-vous faire?",
-    img: af,
+    img: ("images/Gif/giphy.gif"),
     options : ["Jouer la victime", "Hausser le ton", "Appeler le gérant"]
   },
   victime : jouer_victime = {
     subtitle: "Sed ut perspiciatis",
     text:"Le commis vous propose d'appeler son gérant",
-    img: af,
+    img: ("images/Gif/giphy.gif"),
     options : ["S'excuser", "Partir vers les caisses", "Rien faire"]
   },
   caisse : partir_caisses = {
     subtitle: "Sed ut perspiciatis",
     text:"Alors que vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
-    img: af,
+    img: ("images/Gif/giphy.gif"),
     options : ["Partir", "Demander le gérant", "Rien faire"]
   },
   refund : remboursement = {
     subtitle: "Sed ut perspiciatis",
     text:"Le gérant vous affirme qu'il est impossible de vous rembourser. Que voulez-vous faire?",
-    img: af,
+    img: ("images/Gif/giphy.gif"),
     options : ["Partir", "Demander le gérant", "Rien faire"]
   },
 
   
 }
+console.log(chaptersObj);
 
 /*
 

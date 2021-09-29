@@ -5,5 +5,5 @@ Titre : Libère ton stress!
 **Inspiration** : Sans objets 
 
 <h2>Diagramme<h2> 
-![E-field-distances](/../assets/diagrammeFini.jpg)
+![image]("assets/Git/html/Images/jpg/diagramme fini.jpg")
 

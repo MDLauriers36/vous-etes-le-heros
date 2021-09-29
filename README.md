@@ -5,6 +5,7 @@ Titre : Libère ton stress!
 **Inspiration** : Sans objets 
 
 **Colors.co**(https://coolors.co/e6b89c-73937e-4d625a-273036-e6b89c)
+[I'm an inline-style link](https://coolors.co/e6b89c-73937e-4d625a-273036-e6b89c)
 
 ## Diagramme 
 ![E-field-distances](https://github.com/MDLauriers36/vous-etes-le-heros/blob/main/diagrammeFini.jpg)

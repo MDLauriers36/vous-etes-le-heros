@@ -1,6 +1,6 @@
 # vous-etes-le-heros
-Travail 1 
-Titre : Libère ton stress!
+Travail 1 <br>
+Titre : Libère ton stress! <br>
 [Développement web - Projet vous êtes le héros](https://github.com/MDLauriers36/vous-etes-le-heros/blob/main/Git/html/index.html)
 **Genre**: Comédie, 
 **Inspiration** : Sans objets 

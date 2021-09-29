@@ -4,6 +4,6 @@ Titre : Libère ton stress!
 **Genre**: Comédie, 
 **Inspiration** : Sans objets 
 
-<h2>Diagramme<h2> 
-![E-field-distances](/../assets/diagrammeFini.jpg)
+## Diagramme 
+![E-field-distances](https://github.com/MDLauriers36/vous-etes-le-heros/blob/main/diagrammeFini.jpg)
 

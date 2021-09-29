@@ -4,6 +4,6 @@ Titre : Libère ton stress!
 **Genre**: Comédie, 
 **Inspiration** : Sans objets 
 
-<h2>Diagramme<h2> 
-!(https://upload.wikimedia.org/wikipedia/commons/a/ae/NASA_seal.svg)
+## Diagramme
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 

@@ -58,6 +58,10 @@ let chaptersObj = {
     options : ["Partir", "Demander le gérant", "Rien faire"]
   },
 
+  partir : {
+    text : "Partir",
+    
+  }
   
 }
 console.log(chaptersObj);

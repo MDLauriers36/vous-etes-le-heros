@@ -1,11 +1,12 @@
 
 let chaptersObj = {
-              //Chapitres
+
+
   premier_chapitre : {
     subtitle: "L'arrivée",
     text:"Vous arrivez dans un magasin grande surface alors que vous avez massé un très mauvaise journée. Vous devez donc relâcher votre stress sur des employés qui n'ont rien demandé. Saurez-vous bien vous déstresser?",
-    img: ("images/Gif/giphy.gif"),
-    options : [, commencer, ]
+    img: ("images/Gif/giphy.gif")
+    
   }
     ,
   aucune_aide : {
@@ -64,10 +65,10 @@ let chaptersObj = {
   //
   commencer : {
     text : "Commencer la partie",
-    action : (goToChapter(deux_mille))
+    action : (goToChapter(aucune_aide))
   },
   Plaindre : {
-    text: "Douter des compétences de l'employé",
+    text: "Se plaindre",
     action : (goToChapter(deux_mille))
   },
   Douter : {
@@ -125,9 +126,11 @@ let chaptersObj = {
   Insulter : {
     text : "Insulter toutes les personnes qui se trouvent devant vous",
     action : (goToChapter(premier_chapitre)),
-  }
+  },
+  
   
 }
+
 
 function goToChapter(chapterName){
   let chapitre = chaptersObj[chapterName];

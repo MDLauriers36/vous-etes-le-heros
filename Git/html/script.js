@@ -14,7 +14,10 @@ let chaptersObj = {
     subtitle: "L'incapable",
     text:"Le commis ne peut pas vous aider",
     img: ("images/Gif/deux.gif"),
-    //options : [Douter, Plaindre, Rien_faire],
+    //options : [
+      //{ test},
+      //Douter, Plaindre, Rien_faire],
+    //
   },
 
   deux_mille : {

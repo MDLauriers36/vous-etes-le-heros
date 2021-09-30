@@ -63,7 +63,7 @@ let chaptersObj = {
 console.log(chaptersObj);
 
 function goToChapter(chapterName){
-  let chapitre = chaptersObj.chapterName;
+  let chapitre = chapterName;
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
   

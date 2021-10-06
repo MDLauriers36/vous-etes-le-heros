@@ -303,7 +303,7 @@ function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
-  console.log(chapitre.options.text);
+  console.log(chapitre.options);
 
 
 

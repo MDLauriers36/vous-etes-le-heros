@@ -14,7 +14,7 @@ let chaptersObj = {
     img: ("images/Gif/deux.gif"),
     options: [{
         text: "Douter des compétences de l'employé",
-        action: goToChapter(`deux_mille`)
+        action: "goToChapter(`deux_mille`)"
       },
 
       {

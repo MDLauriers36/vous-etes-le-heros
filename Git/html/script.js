@@ -32,24 +32,24 @@ let chaptersObj = {
     //options : [Douter, Plaindre, Rien_faire],
   },
 
- /* deux_mille: {
+  deux_mille: {
     subtitle: "L'excuse du commis",
     text: "Le commis vous affirme qu'il a plus de 2000 produits différents dans son magasin et ne peut pas tous les connaitre. Que voulez-vous faire?",
     img: ("images/Gif/trois.gif"),
     options: [{
         text: "Passer à autre chose",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
       },
 
       {
 
         text: "Appeler_gérant",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter`(autre_chose`)"
       },
 
       {
         text: "Saluer l'employé et partir",
-        action: (goToChapter(premier_chapitre))
+        action: "goToChapter(`premier_chapitre`)"
 
       },
     ]
@@ -62,18 +62,18 @@ let chaptersObj = {
     img: ("images/Gif/quatre.gif"),
     options: [{
         text: "Douter de la compétence de l'employé",
-        action: (goToChapter(deux_mille))
+        action: "goToChapter(`deux_mille`)"
       },
 
       {
 
         text: "Se plaindre",
-        action: (goToChapter(deux_mille))
+        action: "goToChapter(`deux_mille`)"
       },
 
       {
         text: "Rien Faire",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
 
       },
     ]
@@ -86,18 +86,18 @@ let chaptersObj = {
     img: ("images/Gif/cinq.gif"),
     options: [{
         text: "Remercier le gérant",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
       },
 
       {
 
         text: "Dire que son employé devrait être mieux formé",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
       },
 
       {
         text: "Rien Faire",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
 
       },
     ]
@@ -109,18 +109,18 @@ let chaptersObj = {
     img: ("images/Gif/six.gif"),
     options: [{
         text: "Jouer à la victime",
-        action: gotochapter(jouer_victime),
+        action: "gotochapter(`jouer_victime`)"
       },
 
       {
 
         text: "Hausser le ton",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
       },
 
       {
         text: "Appeler le gérant",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
 
       },
     ]
@@ -132,18 +132,18 @@ let chaptersObj = {
     img: ("images/Gif/un.gif"),
     options: [{
         text: "S'excuser",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
       },
 
       {
 
         text: "Partir vers les caisses",
-        action: (goToChapter(partir_caisses))
+        action: "goToChapter(`partir_caisses`)"
       },
 
       {
         text: "Rien faire",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
 
       },
     ]
@@ -156,18 +156,18 @@ let chaptersObj = {
     img: ("images/Gif/deux.gif"),
     options: [{
         text: "Partir",
-        action: gotochapter(autre_chose),
+        action: "gotochapter(`autre_chose`)"
       },
 
       {
 
         text: "Demander à parler au gérant",
-        action: (goToChapter(premier_chapitre))
+        action: "goToChapter(`premier_chapitre`)"
       },
 
       {
         text: "Rien faire",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`autre_chose`)"
 
       },
     ]
@@ -182,16 +182,16 @@ let chaptersObj = {
     img: "images/Gif/trois.gif",
     options: [{
         text: "Partir",
-        action: gotochapter(autre_chose),
+        action: "gotochapter(`autre_chose`)"
       },
       {
         text: "Demander à parler au gérant",
-        action: (goToChapter(premier_chapitre))
+        action: "goToChapter(`premier_chapitre`)"
       },
 
       {
         text: "Insulter toutes les personnes qui se trouvent devant vous",
-        action: (goToChapter(premier_chapitre)),
+        action: "goToChapter(`premier_chapitre`)"
       },
     ]
   }
@@ -220,7 +220,7 @@ let chaptersObj = {
   
   
   
-  */
+  
   
   
   
@@ -303,7 +303,7 @@ function goToChapter(chapterName) {
   let chapitre = chaptersObj[chapterName];
   console.log(chapitre.subtitle);
   console.log(chapitre.text);
-  console.log(chapitre.options[0]);
+  console.log(chapitre.options);
 
 
 

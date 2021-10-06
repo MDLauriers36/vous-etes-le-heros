@@ -5,7 +5,24 @@ let chaptersObj = {
   premier_chapitre: {
     subtitle: "L'arrivée",
     text: "Vous arrivez dans un magasin grande surface alors que vous avez massé un très mauvaise journée. Vous devez donc relâcher votre stress sur des employés qui n'ont rien demandé. Saurez-vous bien vous déstresser?",
-    img: ("images/Gif/un.gif")
+    img: ("images/Gif/un.gif"),
+    options: [{
+      text: "Douter des compétences de l'employé",
+      action: "goToChapter(`deux_mille`)"
+    },
+    
+    {
+
+      text: "Se plaindre",
+      action: "goToChapter(`deux_mille`)"
+    },
+
+    {
+      text: "Rien Faire",
+      action: "goToChapter(`Rien_faire`)"
+
+    },
+  ]
 
   },
   aucune_aide: {

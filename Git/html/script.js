@@ -12,7 +12,6 @@ let chaptersObj = {
     subtitle: "L'incapable",
     text: "Le commis ne peut pas vous aider",
     img: ("images/Gif/deux.gif"),
-<<<<<<< HEAD
     options: [{
         text: "Douter des compétences de l'employé",
         action: (goToChapter(deux_mille))
@@ -31,12 +30,6 @@ let chaptersObj = {
       },
     ]
     //options : [Douter, Plaindre, Rien_faire],
-=======
-    //options : [
-      //{ test},
-      //Douter, Plaindre, Rien_faire],
-    //
->>>>>>> e3b5de7f8e32ab6031bfcdb618a7b6f78eeb0ff8
   },
 
   deux_mille: {

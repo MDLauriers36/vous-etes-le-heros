@@ -20,19 +20,19 @@ let chaptersObj = {
       {
 
         text: "Se plaindre",
-        action: (goToChapter(deux_mille))
+        action: "goToChapter(`deux_mille`)"
       },
 
       {
         text: "Rien Faire",
-        action: (goToChapter(autre_chose))
+        action: "goToChapter(`Rien_faire`)"
 
       },
     ]
     //options : [Douter, Plaindre, Rien_faire],
   },
 
-  deux_mille: {
+ /* deux_mille: {
     subtitle: "L'excuse du commis",
     text: "Le commis vous affirme qu'il a plus de 2000 produits différents dans son magasin et ne peut pas tous les connaitre. Que voulez-vous faire?",
     img: ("images/Gif/trois.gif"),
@@ -220,6 +220,7 @@ let chaptersObj = {
   
   
   
+  */
   
   
   
@@ -228,8 +229,7 @@ let chaptersObj = {
   
   
   
-  
-  
+  /*
   commencer : {
      text : "Commencer la partie",
      action : (goToChapter(aucune_aide))

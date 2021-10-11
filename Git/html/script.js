@@ -1,3 +1,8 @@
+
+
+
+
+
 let chaptersObj = {
 
 
@@ -23,7 +28,7 @@ let chaptersObj = {
 
     },
   ]
-
+  
   },
   aucune_aide: {
     subtitle: "L'incapable",
@@ -312,16 +317,33 @@ let chaptersObj = {
      action : (goToChapter(premier_chapitre)),
    },
    */
-
+   
 }
 
 
 function goToChapter(chapterName) {
-  let chapitre = chaptersObj[chapterName];
-  console.log(chapitre.subtitle);
-  console.log(chapitre.text);
-  console.log(chapitre.options);
+  
+  for(let i = 0; i < chaptersObj[i].length; i++){
+    let chapitre = document.getElementById('titre').innerText;
+    let text = document.querySelector('.txt').innerHTML;
+    let image = document.querySelector('.visuel').innerHTML;
+    let button1 = document.querySelector('.bouton1').innerHTML;
+    let button2 = document.querySelector('.bouton2').innerHTML;
+    let button3 = document.querySelector('.bouton3').innerHTML;
+    chapitre.innerText = chaptersObj[i].subtitle;
+    text.innerText = chaptersObj[i].text
+    image.innerText = `<img src="${chaptersObj[i].img}" alt="img" />`;
+    button1.innerText = `<button type="button">${chaptersObj[i].options[0].text}</button>`;
+    button2.innerText = `<button type="button">${chaptersObj[i].options[1].text}</button>`;
+    button3.innerText = `<button type="button">${chaptersObj[i].options[2].text}</button>`;
+    
+    goToChapter(chapterName);
+  }
+ 
+  
+  
 
-
+}
+function click(){
 
 }

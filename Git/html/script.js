@@ -226,7 +226,7 @@ function goToChapter(chapterName) {
   
   for(let i = 0; i < chaptersObj[i].length; i++){
     let chapitre = document.getElementById('titre').innerText;
-    let text = document.querySelector('.txt').innerHTML;
+    let text = document.querySelector('.txt').innerText;
     let image = document.querySelector('.visuel').innerHTML;
     let button1 = document.querySelector('.bouton1').innerHTML;
     let button2 = document.querySelector('.bouton2').innerHTML;
@@ -241,10 +241,11 @@ function goToChapter(chapterName) {
     goToChapter(chapterName);
   }
  
-  goToChapter(premier_chapitre);
+  
   
 
 }
+goToChapter(premier_chapitre);
 function click(){
 
 }

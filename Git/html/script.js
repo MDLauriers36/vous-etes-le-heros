@@ -218,105 +218,6 @@ let chaptersObj = {
     ]
   }
 
-  // Actions
-
-  /* 
-  
-  meurtre: {
-     subtitle: "Rencontre forcée",
-     text: `Après plusieurs heures de marche, vous arrivez près
-     d'un terrain d'entraînement. Steven vous pointe un homme au
-     loin et vous remet un couteau. Vous allez à la
-     rencontre de l'homme, qui vous accueuille chaleureusement.`,
-     img: "images/geordo_meet.jpg",
-     options: [
-       {
-     text: "flirter",
-     action: "gotochapter(`fauxflirt`)",
-   },
-    {
-     text: "assassiner",
-     action: "gotochapter(`poignarde`)",
-   },],
-   },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*
-  commencer : {
-     text : "Commencer la partie",
-     action : (goToChapter(aucune_aide))
-   },
-   Plaindre : {
-     text: "Se plaindre",
-     action : (goToChapter(deux_mille))
-   },
-   Douter : {
-     text: "Douter des compétences de l'employé",
-     action : (goToChapter(deux_mille))
-   },
-   mieux_formé : {
-     text: "Dire que son employé devrait être mieux formé",
-     action : (goToChapter(autre_chose))
-   },
-   remercier : {
-     text: "Le remercier",
-     action : (goToChapter(autre_chose))
-   },
-   Appeler_gérant : {
-     text : "Appeler_gérant",
-     action : (goToChapter(autre_chose))
-   },
-   Hausser_ton : {
-     text : "Hausser le ton",
-     action : (goToChapter(autre_chose))
-
-   },
-   victime : {
-     text : "Jouer à la victime",
-     action : (goToChapter(jouer_victime))
-   },
-   Rien_faire : {
-     text : "Rien faire",
-     action : (goToChapter(autre_chose))
-   },
-
-   Go_caisses : {
-     text : "Partir vers les caisses",
-     action : (goToChapter(partir_caisses))
-   },
-   excuser : {
-     text : "S'excuser",
-     action : (goToChapter(autre_chose))
-   },
-   Demander_gérant : {
-     text : "Demander à parler au gérant",
-     action : (goToChapter(premier_chapitre))
-   },
-
-   Partir : {
-     text : "Partir",
-     action : (goToChapter(premier_chapitre))
-   },
-   
-   Jamais_revenir : {
-     text : "Dire que vous n'allez plus jamais revenir",
-     action : (goToChapter(premier_chapitre)),
-   },
-   Insulter : {
-     text : "Insulter toutes les personnes qui se trouvent devant vous",
-     action : (goToChapter(premier_chapitre)),
-   },
-   */
    
 }
 
@@ -326,7 +227,7 @@ function goToChapter(chapterName) {
   
   /*for(let i = 0; i < chaptersObj[i].length; i++){
     let chapitre = document.getElementById('titre').innerText;
-    let text = document.querySelector('.txt').innerHTML;
+    let text = document.querySelector('.txt').innerText;
     let image = document.querySelector('.visuel').innerHTML;
     let button1 = document.querySelector('.bouton1').innerHTML;
     let button2 = document.querySelector('.bouton2').innerHTML;

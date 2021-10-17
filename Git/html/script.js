@@ -223,27 +223,6 @@ let chaptersObj = {
 
 
 function goToChapter(chapterName) {
-  
-  
-  /*for(let i = 0; i < chaptersObj[i].length; i++){
-    let chapitre = document.getElementById('titre').innerText;
-    let text = document.querySelector('.txt').innerText;
-    let image = document.querySelector('.visuel').innerHTML;
-    let button1 = document.querySelector('.bouton1').innerHTML;
-    let button2 = document.querySelector('.bouton2').innerHTML;
-    let button3 = document.querySelector('.bouton3').innerHTML;
-    chapitre.innerText = chaptersObj[i].subtitle;
-    text.innerText = chaptersObj[i].text
-    image.innerText = `<img src="${chaptersObj[i].img}" alt="img" />`;
-    button1.innerText = `<button type="button">${chaptersObj[i].options[0].text}</button>`;
-    button2.innerText = `<button type="button">${chaptersObj[i].options[1].text}</button>`;
-    button3.innerText = `<button type="button">${chaptersObj[i].options[2].text}</button>`;
-    
-    goToChapter(chapterName);
-  }
- 
-  */
-  
 
   let chapter = document.getElementById(".titre");
   let text = document.querySelector(".txt");
@@ -263,6 +242,7 @@ function goToChapter(chapterName) {
   }
   choices.innerHTML = txtButton;
 
-gotochapter("premier_chapitre");
+
 
 }
+goToChapter("premier_chapitre");

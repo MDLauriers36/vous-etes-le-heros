@@ -152,7 +152,10 @@ h3{
     z-index: -1;
     
 }
-
+button{
+    width: 200px;
+    height: 36px;
+}
 
 
 

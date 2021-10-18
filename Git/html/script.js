@@ -224,11 +224,11 @@ let chaptersObj = {
 
 function goToChapter(chapterName) {
 
-  let chapter = document.getElementById(".titre");
+  let chapter = document.getElementById("titre");
   let text = document.querySelector(".txt");
   let image = document.querySelector(".visuel");
   let choices = document.querySelector(".boutons-ligne1");
-  window.onload=chapter.innerText = chaptersObj[chapterName].subtitle;
+  chapter.innerText = chaptersObj[chapterName].subtitle;
   text.innerText = chaptersObj[chapterName].text;
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img" />`;
   let txtButton = "";

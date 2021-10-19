@@ -1,3 +1,8 @@
+
+
+
+
+
 let chaptersObj = {
 
 
@@ -7,23 +12,23 @@ let chaptersObj = {
     text: "Vous arrivez dans un magasin grande surface alors que vous avez massé un très mauvaise journée. Vous devez donc relâcher votre stress sur des employés qui n'ont rien demandé. Saurez-vous bien vous déstresser?",
     img: "Images/jpg/succ-accueil-corpo.jpg",
     options: [{
-        text: "Douter des compétences de l'employé",
-        action: "goToChapter(`deux_mille`)"
-      },
+      text: "Douter des compétences de l'employé",
+      action: "goToChapter(`deux_mille`)"
+    },
+    
+    {
 
-      {
+      text: "Se plaindre",
+      action: "goToChapter(`deux_mille`)"
+    },
 
-        text: "Se plaindre",
-        action: "goToChapter(`deux_mille`)"
-      },
+    {
+      text: "Rien Faire",
+      action: "goToChapter(`Rien_faire`)"
 
-      {
-        text: "Rien Faire",
-        action: "goToChapter(`autre_chose`)"
-
-      },
-    ]
-
+    },
+  ]
+  
   },
   aucune_aide: {
     subtitle: "L'incapable",
@@ -42,7 +47,7 @@ let chaptersObj = {
 
       {
         text: "Rien Faire",
-        action: "goToChapter(`autre_chose`)"
+        action: "goToChapter(`Rien_faire`)"
 
       },
     ]
@@ -61,7 +66,7 @@ let chaptersObj = {
       {
 
         text: "Appeler_gérant",
-        action: "goToChapter`(`autre_chose`)"
+        action: "goToChapter`(autre_chose`)"
       },
 
       {
@@ -126,7 +131,7 @@ let chaptersObj = {
     img: ("images/Gif/six.gif"),
     options: [{
         text: "Jouer à la victime",
-        action: "goToChapter(`jouer_victime`)"
+        action: "gotochapter(`jouer_victime`)"
       },
 
       {
@@ -169,7 +174,7 @@ let chaptersObj = {
   },
   partir_caisses: {
     subtitle: "Pfff...",
-    text: "Alors qTe vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
+    text: "Alors que vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
     img: ("images/Gif/deux.gif"),
     options: [{
         text: "Partir",
@@ -199,7 +204,7 @@ let chaptersObj = {
     img: "images/Gif/trois.gif",
     options: [{
         text: "Partir",
-        action: "goToChapter(`autre_chose`)"
+        action: "gotochapter(`autre_chose`)"
       },
       {
         text: "Demander à parler au gérant",
@@ -213,7 +218,7 @@ let chaptersObj = {
     ]
   }
 
-
+   
 }
 
 
@@ -227,7 +232,11 @@ function goToChapter(chapterName) {
   text.innerText = chaptersObj[chapterName].text;
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img" />`;
   let txtButton = "";
-  for (let index = 0; index < chaptersObj[chapterName].options.length; index++) {
+  for (
+    let index = 0;
+    index < chaptersObj[chapterName].options.length;
+    index++
+  ) {
     const choice = chaptersObj[chapterName].options[index].action;
     txtButton += `<div class="button"><button type="button" onclick="${chaptersObj[chapterName].options[index].action}">${chaptersObj[chapterName].options[index].text}</button></div>`;
   }

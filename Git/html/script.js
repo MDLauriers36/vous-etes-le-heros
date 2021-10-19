@@ -14,7 +14,7 @@ let chaptersObj = {
       {
 
         text: "Se plaindre",
-        action: "goToChapter(`deux_mille`)"
+        action: "goToChapter(`commis_calme`)"
       },
 
       {
@@ -28,7 +28,7 @@ let chaptersObj = {
   aucune_aide: {
     subtitle: "L'incapable",
     text: "Le commis ne peut pas vous aider",
-    img: ("images/Gif/deux.gif"),
+    img: "images/Gif/deux.gif",
     options: [{
         text: "Douter des compétences de l'employé",
         action: "goToChapter(`deux_mille`)"
@@ -52,7 +52,7 @@ let chaptersObj = {
   deux_mille: {
     subtitle: "L'excuse du commis",
     text: "Le commis vous affirme qu'il a plus de 2000 produits différents dans son magasin et ne peut pas tous les connaitre. Que voulez-vous faire?",
-    img: ("images/Gif/trois.gif"),
+    img: "images/Gif/trois.gif",
     options: [{
         text: "Passer à autre chose",
         action: "goToChapter(`autre_chose`)"
@@ -76,21 +76,21 @@ let chaptersObj = {
   autre_chose: {
     subtitle: "BOOOOOO!",
     text: "Partie perdue. Retour à la première question (Rappelez-vous que vous devez embêter le plus de personnes possibles.",
-    img: ("images/Gif/quatre.gif"),
+    img: "images/Gif/quatre.gif",
     options: [{
-        text: "Douter de la compétence de l'employé",
-        action: "goToChapter(`deux_mille`)"
+      text: "Se plaindre",
+      action: "goToChapter(`premier_chapitre`)"
       },
 
       {
 
         text: "Se plaindre",
-        action: "goToChapter(`deux_mille`)"
+        action: "goToChapter(`premier_chapitre`)"
       },
 
       {
-        text: "Rien Faire",
-        action: "goToChapter(`autre_chose`)"
+        text: "Se plaindre",
+        action: "goToChapter(`premier_chapitre`)"
 
       },
     ]
@@ -100,7 +100,7 @@ let chaptersObj = {
   gerant_aide: {
     subtitle: "Enfin de l'aide",
     text: "Le gérant vous a aidé à trouver votre produit.",
-    img: ("images/Gif/cinq.gif"),
+    img: "images/Gif/cinq.gif",
     options: [{
         text: "Remercier le gérant",
         action: "goToChapter(`autre_chose`)"
@@ -123,7 +123,7 @@ let chaptersObj = {
   commis_calme: {
     subtitle: "L'audace du commis",
     text: "Le commis vous demande de vous calmer. Que voulez-vous faire?",
-    img: ("images/Gif/six.gif"),
+    img: "images/Gif/six.gif",
     options: [{
         text: "Jouer à la victime",
         action: "goToChapter(`jouer_victime`)"
@@ -146,7 +146,7 @@ let chaptersObj = {
   jouer_victime: {
     subtitle: "La carte de la victime",
     text: "Le commis vous propose d'appeler son gérant",
-    img: ("images/Gif/un.gif"),
+    img: "images/Gif/un.gif",
     options: [{
         text: "S'excuser",
         action: "goToChapter(`autre_chose`)"
@@ -169,11 +169,11 @@ let chaptersObj = {
   },
   partir_caisses: {
     subtitle: "Pfff...",
-    text: "Alors qTe vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
-    img: ("images/Gif/deux.gif"),
+    text: "Alors que vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
+    img: "images/Gif/deux.gif",
     options: [{
         text: "Partir",
-        action: "gotochapter(`autre_chose`)"
+        action: "goToChapter(`autre_chose`)"
       },
 
       {
@@ -211,8 +211,27 @@ let chaptersObj = {
         action: "goToChapter(`premier_chapitre`)"
       },
     ]
-  }
+  },
 
+  finale: {
+    subtitle: "PARTIE TERMINÉE",
+    text: "Félicitation, vous avez été une grosse bitch!",
+    img: "images/Gif/trois.gif",
+    options: [{
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+      {
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+
+      {
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+    ]
+  }
 
 }
 

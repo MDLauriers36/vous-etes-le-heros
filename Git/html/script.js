@@ -132,7 +132,7 @@ let chaptersObj = {
       {
 
         text: "Insulter l'employé",
-        action: "goToChapter(`autre_chose`)"
+        action: "goToChapter(`clé`)"
       },
 
       {
@@ -255,7 +255,7 @@ let chaptersObj = {
 
   clé: {
     subtitle: "Partie Perdue",
-    text: "Alors que vous jouez la carte de la victime, voulez-vous crier sur l'employé?",
+    text: "Alors que vous conversez avec l'employé, voulez-vous lui crier dessus?",
     img: "Images/Gif/pote_waifu2x_2x_2n.gif",
     options: [{
         text: "oui",

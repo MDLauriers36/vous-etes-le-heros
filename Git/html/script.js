@@ -126,12 +126,12 @@ let chaptersObj = {
     img: "Images/Gif/giphy (1).gif",
     options: [{
         text: "Jouer à la victime",
-        action: "goToChapter(`jouer_victime`)"
+        action: "goToChapter(`clé`)"
       },
 
       {
 
-        text: "Hausser le ton",
+        text: "Insulter l'employé",
         action: "goToChapter(`autre_chose`)"
       },
 
@@ -251,6 +251,23 @@ let chaptersObj = {
         action: "goToChapter(`premier_chapitre`)"
       },
     ]
+  },
+
+  clé: {
+    subtitle: "Partie Perdue",
+    text: "Alors que vous jouez la carte de la victime, voulez-vous crier sur l'employé?",
+    img: "Images/Gif/pote_waifu2x_2x_2n.gif",
+    options: [{
+        text: "oui",
+        action: "goToChapter(`jouer_victime`)"
+      },
+      
+
+      {
+        text: "non",
+        action: "goToChapter(`jouer_victime`)"
+      },
+    ]
   }
 
 }
@@ -274,5 +291,10 @@ function goToChapter(chapterName) {
 
 
 
+}
+let victimeCrie = false;
+function victimeCrier(){
+  victimeCrie = true;
+  goToChapter(jouer_victime)
 }
 goToChapter("premier_chapitre");

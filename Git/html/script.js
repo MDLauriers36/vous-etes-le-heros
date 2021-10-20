@@ -61,12 +61,12 @@ let chaptersObj = {
       {
 
         text: "Appeler_gérant",
-        action: "goToChapter`(`autre_chose`)"
+        action: "goToChapter(`autre_chose`)"
       },
 
       {
         text: "Saluer l'employé et partir",
-        action: "goToChapter(`premier_chapitre`)"
+        action: "goToChapter(`autre_chose`)"
 
       },
     ]

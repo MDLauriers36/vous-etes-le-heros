@@ -265,7 +265,7 @@ let chaptersObj = {
 
       {
         text: "non",
-        action: "goToChapter(`jouer_victime`)"
+        action: "goToChapter(`jouer_victime`)" 
       },
     ]
   }

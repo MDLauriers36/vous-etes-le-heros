@@ -28,7 +28,7 @@ let chaptersObj = {
   aucune_aide: {
     subtitle: "L'incapable",
     text: "Le commis ne peut pas vous aider",
-    img: "images/Gif/deux.gif",
+    img: "Images/Gif/200.gif",
     options: [{
         text: "Douter des compétences de l'employé",
         action: "goToChapter(`deux_mille`)"
@@ -52,7 +52,7 @@ let chaptersObj = {
   deux_mille: {
     subtitle: "L'excuse du commis",
     text: "Le commis vous affirme qu'il a plus de 2000 produits différents dans son magasin et ne peut pas tous les connaitre. Que voulez-vous faire?",
-    img: "images/Gif/trois.gif",
+    img: "Images/Gif/200w.gif",
     options: [{
         text: "Passer à autre chose",
         action: "goToChapter(`autre_chose`)"
@@ -76,20 +76,20 @@ let chaptersObj = {
   autre_chose: {
     subtitle: "BOOOOOO!",
     text: "Partie perdue. Retour à la première question (Rappelez-vous que vous devez embêter le plus de personnes possibles.",
-    img: "images/Gif/quatre.gif",
+    img: "Images/Gif/4dck6t.gif",
     options: [{
-      text: "Se plaindre",
+      text: "Retour vers la page principal",
       action: "goToChapter(`premier_chapitre`)"
       },
 
       {
 
-        text: "Se plaindre",
+        text: "Retour vers la page principal",
         action: "goToChapter(`premier_chapitre`)"
       },
 
       {
-        text: "Se plaindre",
+        text: "Retour vers la page principal",
         action: "goToChapter(`premier_chapitre`)"
 
       },
@@ -100,7 +100,7 @@ let chaptersObj = {
   gerant_aide: {
     subtitle: "Enfin de l'aide",
     text: "Le gérant vous a aidé à trouver votre produit.",
-    img: "images/Gif/cinq.gif",
+    img: "Images/Gif/congrats-6.gif",
     options: [{
         text: "Remercier le gérant",
         action: "goToChapter(`autre_chose`)"
@@ -123,7 +123,7 @@ let chaptersObj = {
   commis_calme: {
     subtitle: "L'audace du commis",
     text: "Le commis vous demande de vous calmer. Que voulez-vous faire?",
-    img: "images/Gif/six.gif",
+    img: "Images/Gif/giphy (1).gif",
     options: [{
         text: "Jouer à la victime",
         action: "goToChapter(`jouer_victime`)"
@@ -146,7 +146,7 @@ let chaptersObj = {
   jouer_victime: {
     subtitle: "La carte de la victime",
     text: "Le commis vous propose d'appeler son gérant",
-    img: "images/Gif/un.gif",
+    img: "Images/Gif/giphy.gif",
     options: [{
         text: "S'excuser",
         action: "goToChapter(`autre_chose`)"
@@ -170,7 +170,7 @@ let chaptersObj = {
   partir_caisses: {
     subtitle: "Pfff...",
     text: "Alors que vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
-    img: "images/Gif/deux.gif",
+    img: "Images/Gif/karen-ok.gif",
     options: [{
         text: "Partir",
         action: "goToChapter(`autre_chose`)"
@@ -179,7 +179,7 @@ let chaptersObj = {
       {
 
         text: "Demander à parler au gérant",
-        action: "goToChapter(`premier_chapitre`)"
+        action: "goToChapter(`remboursement`)"
       },
 
       {
@@ -196,19 +196,19 @@ let chaptersObj = {
   remboursement: {
     subtitle: "Vraiments tous incapables",
     text: "Le gérant vous affirme qu'il est impossible de vous rembourser. Que voulez-vous faire?",
-    img: "images/Gif/trois.gif",
+    img: "Images/Gif/téléchargement.jpg",
     options: [{
         text: "Partir",
         action: "goToChapter(`autre_chose`)"
       },
       {
-        text: "Demander à parler au gérant",
-        action: "goToChapter(`premier_chapitre`)"
+        text: "Dire que vous ne reviendrez plus jamais",
+        action: "goToChapter(`finale`)"
       },
 
       {
         text: "Insulter toutes les personnes qui se trouvent devant vous",
-        action: "goToChapter(`premier_chapitre`)"
+        action: "goToChapter(`finale`)"
       },
     ]
   },
@@ -216,7 +216,7 @@ let chaptersObj = {
   finale: {
     subtitle: "PARTIE TERMINÉE",
     text: "Félicitation, vous avez été une grosse bitch!",
-    img: "images/Gif/trois.gif",
+    img: "Images/Gif/congrats-6.gif",
     options: [{
         text: "Retour à la page principale",
         action: "goToChapter(`premier_chapitre`)"
@@ -236,7 +236,7 @@ let chaptersObj = {
   quitter: {
     subtitle: "Partie Perdue",
     text: "Le gérant vous a menacer d'appeler la police si vous ne partiez pas de son magasin...",
-    img: "images/Gif/trois.gif",
+    img: "Images/Gif/pote_waifu2x_2x_2n.gif",
     options: [{
         text: "Retour à la page principale",
         action: "goToChapter(`premier_chapitre`)"

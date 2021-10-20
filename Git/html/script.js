@@ -231,6 +231,26 @@ let chaptersObj = {
         action: "goToChapter(`premier_chapitre`)"
       },
     ]
+  }, 
+
+  quitter: {
+    subtitle: "Partie Perdue",
+    text: "Le gérant vous a menacer d'appeler la police si vous ne partiez pas de son magasin...",
+    img: "images/Gif/trois.gif",
+    options: [{
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+      {
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+
+      {
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+    ]
   }
 
 }

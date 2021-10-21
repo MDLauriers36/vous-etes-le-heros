@@ -383,7 +383,7 @@ function goToChapter(chapterName) {
   let txtButton = "";
   for (let index = 0; index < chaptersObj[chapterName].options.length; index++) {
     const choice = chaptersObj[chapterName].options[index].action;
-    txtButton += `<div class="button"><button type="button" onclick="${chaptersObj[chapterName].options[index].action}" style="background-color:black;">${chaptersObj[chapterName].options[index].text}</button></div>`;
+    txtButton += `<div class="button"><button type="button" onclick="${chaptersObj[chapterName].options[index].action}">${chaptersObj[chapterName].options[index].text}</button></div>`;
   }
   choices.innerHTML = txtButton;
   

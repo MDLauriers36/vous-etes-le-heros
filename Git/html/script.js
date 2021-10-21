@@ -1,11 +1,10 @@
-
 let chaptersObj = {
 
 
   // Chapitres
   premier_chapitre: {
     subtitle: "L'arrivée",
-    text: "Vous arrivez dans un magasin grande surface alors que vous avez massé un très mauvaise journée. Vous devez donc relâcher votre stress sur des employés qui n'ont rien demandé. Saurez-vous bien vous déstresser?",
+    text: "Vous arrivez dans un magasin grande surface alors que vous avez passé un très mauvaise journée. Vous devez donc relâcher votre stresse sur des employés qui n'ont rien demandé. Vous aurez gagné lorsque vous aurez entré dans le magasin, embêter le plus de personnes possible et que vous serai sorti sans avoir de problèmes. Saurez-vous bien vous déstresser?",
     img: "Images/jpg/succ-accueil-corpo.jpg",
     options: [{
         text: "Douter des compétences de l'employé",
@@ -79,8 +78,8 @@ let chaptersObj = {
     text: "Partie perdue. Retour à la première question (Rappelez-vous que vous devez embêter le plus de personnes possibles.",
     img: "Images/Gif/4dck6t.gif",
     options: [{
-      text: "Retour vers la page principal",
-      action: "goToChapter(`premier_chapitre`)"
+        text: "Retour vers la page principal",
+        action: "goToChapter(`premier_chapitre`)"
       },
 
       {
@@ -110,12 +109,36 @@ let chaptersObj = {
       {
 
         text: "Dire que son employé devrait être mieux formé",
-        action: "goToChapter(`autre_chose`)"
+        action: "goToChapter(`gerant_reste`)"
       },
 
       {
         text: "Rien Faire",
         action: "goToChapter(`autre_chose`)"
+
+      },
+    ]
+    //options : [remercier, mieux_formé, Rien_faire],
+  },
+
+  gerant_reste: {
+    subtitle: "Partie Perdue",
+    text: "Àprès ce commentaire, le gérant vous a aider à compléter vos achats, vous n'avez donc aucune opportunités pour vous déchainer.",
+    img: "Images/Gif/game-over.gif",
+    options: [{
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+
+      {
+
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+
+      {
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
 
       },
     ]
@@ -267,7 +290,7 @@ let chaptersObj = {
 
   finale: {
     subtitle: "PARTIE TERMINÉE",
-    text: "Félicitation, vous avez été une grosse bitch!",
+    text: "Félicitation, vous avez été insupportable!",
     img: "Images/Gif/congrats-6.gif",
     options: [{
         text: "Retour à la page principale",
@@ -283,7 +306,7 @@ let chaptersObj = {
         action: "goToChapter(`premier_chapitre`)"
       },
     ]
-  }, 
+  },
 
   quitter: {
     subtitle: "Partie Perdue",
@@ -313,11 +336,11 @@ let chaptersObj = {
         text: "oui",
         action: "condition()"
       },
-      
+
 
       {
         text: "non",
-        action: "victimeCrie()" 
+        action: "victimeCrie()"
       },
     ]
   },
@@ -355,29 +378,31 @@ function goToChapter(chapterName) {
   let choices = document.querySelector(".boutons-ligne1");
   chapter.innerText = chaptersObj[chapterName].subtitle;
   text.innerText = chaptersObj[chapterName].text;
+
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img" />`;
   let txtButton = "";
   for (let index = 0; index < chaptersObj[chapterName].options.length; index++) {
     const choice = chaptersObj[chapterName].options[index].action;
-    txtButton += `<div class="button"><button type="button" onclick="${chaptersObj[chapterName].options[index].action}">${chaptersObj[chapterName].options[index].text}</button></div>`;
+    txtButton += `<div class="button"><button type="button" onclick="${chaptersObj[chapterName].options[index].action}" style="background-color:black;">${chaptersObj[chapterName].options[index].text}</button></div>`;
   }
   choices.innerHTML = txtButton;
+  
 
-  
-  
+
+
 }
 
 let crier = false;
 
-function victimeCrie(){
+function victimeCrie() {
   crier = true;
   goToChapter(`jouer_victime`);
 }
 
-function condition(){
-  if (crier = true){
+function condition() {
+  if (crier = true) {
     goToChapter(`jouer_victime_true`);
-  } else{
+  } else {
     goToChapter(`jouer_victime`);
   }
 }

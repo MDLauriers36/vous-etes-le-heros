@@ -61,8 +61,8 @@ let chaptersObj = {
 
       {
 
-        text: "Appeler_gérant",
-        action: "goToChapter(`autre_chose`)"
+        text: "Appeler le gérant gérant",
+        action: "goToChapter(`gerant_aide`)"
       },
 
       {
@@ -101,7 +101,7 @@ let chaptersObj = {
   gerant_aide: {
     subtitle: "Enfin de l'aide",
     text: "Le gérant vous a aidé à trouver votre produit.",
-    img: "Images/Gif/congrats-6.gif",
+    img: "Images/Gif/michael-scott-the-manager.gif",
     options: [{
         text: "Remercier le gérant",
         action: "goToChapter(`autre_chose`)"

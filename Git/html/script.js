@@ -1,3 +1,4 @@
+
 let chaptersObj = {
 
 
@@ -167,6 +168,32 @@ let chaptersObj = {
 
     //options : [excuser, Go_caisses, Rien_faire],
   },
+
+  jouer_victime_true: {
+    subtitle: "La carte de la victime",
+    text: "Le commis vous propose d'appeler son gérant",
+    img: "Images/Gif/giphy.gif",
+    options: [{
+        text: "S'excuser",
+        action: "goToChapter(`autre_chose`)"
+      },
+
+      {
+
+        text: "Partir vers les caisses",
+        action: "goToChapter(`partir_caisses_true`)"
+      },
+
+      {
+        text: "Rien faire",
+        action: "goToChapter(`autre_chose`)"
+
+      },
+    ]
+
+    //options : [excuser, Go_caisses, Rien_faire],
+  },
+
   partir_caisses: {
     subtitle: "Pfff...",
     text: "Alors que vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
@@ -185,6 +212,31 @@ let chaptersObj = {
       {
         text: "Rien faire",
         action: "goToChapter(`autre_chose`)"
+
+      },
+    ]
+
+    //options : [Partir, Demander_gérant, Rien_faire],
+  },
+
+  partir_caisses_true: {
+    subtitle: "Pfff...",
+    text: "Alors que vous voulez vous faire rembourser un produit que vous avez consommé, la caissière vous dit qu'il est impossible de vous rembourser. Que voulez-vous faire?",
+    img: "Images/Gif/karen-ok.gif",
+    options: [{
+        text: "Partir",
+        action: "goToChapter(`true`)"
+      },
+
+      {
+
+        text: "Demander à parler au gérant",
+        action: "goToChapter(`true`)"
+      },
+
+      {
+        text: "Rien faire",
+        action: "goToChapter(`true`)"
 
       },
     ]
@@ -259,18 +311,40 @@ let chaptersObj = {
     img: "Images/Gif/pote_waifu2x_2x_2n.gif",
     options: [{
         text: "oui",
-        action: "goToChapter(`jouer_victime`)"
+        action: "condition()"
       },
       
 
       {
         text: "non",
-        action: "goToChapter(`jouer_victime`)" 
+        action: "victimeCrie()" 
       },
     ]
-  }
+  },
+
+  true: {
+    subtitle: "Partie Perdue",
+    text: "Le gérant vous a vu et entendu à l'aide de ses caméras de surveillance et a appelé la police. Le but du jeu est de créer un pronlème pour les autres et non pour vous...",
+    img: "Images/Gif/smosh-cop.gif",
+    options: [{
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+      {
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+
+      {
+        text: "Retour à la page principale",
+        action: "goToChapter(`premier_chapitre`)"
+      },
+    ]
+  },
 
 }
+
+
 
 
 function goToChapter(chapterName) {
@@ -289,12 +363,24 @@ function goToChapter(chapterName) {
   }
   choices.innerHTML = txtButton;
 
+  
+  
+}
+
+let crier = false;
+
+function victimeCrie(){
+  crier = true;
+  goToChapter(`jouer_victime`);
+}
+
+function condition(){
+  if (crier = true){
+    goToChapter(`jouer_victime_true`);
+  } else{
+    goToChapter(`jouer_victime`);
+  }
+}
 
 
-}
-let victimeCrie = false;
-function victimeCrier(){
-  victimeCrie = true;
-  goToChapter(jouer_victime)
-}
 goToChapter("premier_chapitre");

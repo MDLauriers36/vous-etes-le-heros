@@ -1,258 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-
-body{
-    margin: 0;
-    background-color: #73937E;
-    
+body {
+  margin: 0;
+  background-color: #73937e;
 }
-.bloc_central{
-    display: flex;
-    flex-direction: column-reverse;
-    margin: auto;
-    background-color: #E6B89C;
-    width: 800px;
-    height: 800px;
-    box-shadow: 0 0 20px black;
-    border-radius: 1%;
-    flex-wrap: wrap;
-    align-content: stretch;
-    padding-bottom: 30px;
-    overflow: hidden;
-    min-height: 100px;
-    
-    
-    
-    
-    
+.bloc_central {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+  background-color: #e6b89c;
+  width: 800px;
+  height: 800px;
+  box-shadow: 0 0 20px black;
+  border-radius: 1%;
+  flex-wrap: wrap;
+  align-content: stretch;
+  padding-bottom: 30px;
+  overflow: hidden;
+  min-height: 100px;
 }
-.titre{
-    font-family: 'Permanent Marker', cursive;
-    font-size: 20px;
-    margin: auto;
-    order: 1;
-    margin-top: 0;
-    margin-bottom: 0;
+.titre {
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  margin: auto;
+  order: 1;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.visuel{
-    max-height: 300px;
-    background-color: white;
-    height: 300px;
-    width: 400px;
-    margin: auto;   
+.visuel {
+  max-height: 300px;
+  background-color: white;
+  height: 300px;
+  width: 400px;
+  margin: auto;
 }
-img{
-    max-height: 300px;
-    background-color: white;
-    height: 300px;
-    width: 400px;
-    margin: auto;   
+img {
+  max-height: 300px;
+  background-color: white;
+  height: 300px;
+  width: 400px;
+  margin: auto;
 }
-.drole{
-    margin: auto;
-    margin-top: auto;
-   
-   
-    
+.drole {
+  margin: auto;
+  margin-top: auto;
+
   display: block;
   max-width: 400px;
   max-height: 300px;
 }
-.txt{
-    width: 80%;
-    height: 80px;
-    background-color: #bf8d6e;
-    
-    margin: auto;
-    margin-top: 0;
-    
-}
-.txt p{
-    color: black;
-}
-h2{
-    margin-top: 26.5px;
-    text-align: center;
-    
-    
-}
-h3{
-    margin-top: 26.5px;
-    text-align: center;
-    
-    
-}
-.titre h3{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.boutons-ligne1{
-    display: flex;
-    flex-direction: row;
-    
-    order: -1;
-    
-    justify-content: space-between;
-    padding-bottom: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+.txt {
+  width: 80%;
+  height: 80px;
+  background-color: #bf8d6e;
 
+  margin: auto;
+  margin-top: 0;
+}
+.txt p {
+  color: black;
+}
+h2 {
+  margin-top: 26.5px;
+  text-align: center;
+}
+h3 {
+  margin-top: 26.5px;
+  text-align: center;
+}
+.titre h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.boutons-ligne1 {
+  display: flex;
+  flex-direction: row;
+
+  order: -1;
+
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-
-.bouton1{
-   background-color:white ;
-   border-radius: 5px;
-   height: 80px;
-   width : 250px;
-   box-shadow: 0 0 10px black;
-   
-   
+.bouton1 {
+  background-color: white;
+  border-radius: 5px;
+  height: 80px;
+  width: 250px;
+  box-shadow: 0 0 10px black;
 }
-.bouton2{
-   background-color:white ;
-   border-radius: 5px;
-   height: 80px;
-   box-shadow: 0 0 10px black;
-   width : 250px;
-  
-   
-    
+.bouton2 {
+  background-color: white;
+  border-radius: 5px;
+  height: 80px;
+  box-shadow: 0 0 10px black;
+  width: 250px;
 }
-.bouton3{
-   background-color:white ;
-   border-radius: 5px;
-   height: 80px;
-   box-shadow: 0 0 10px black;
-   width : 250px;
-   
+.bouton3 {
+  background-color: white;
+  border-radius: 5px;
+  height: 80px;
+  box-shadow: 0 0 10px black;
+  width: 250px;
 }
 
+.haut {
+  position: absolute;
+  bottom: 20%;
 
-.haut{
-    position: absolute;
-    bottom: 20%;
-    
-    z-index: -1;
-    
+  z-index: -1;
 }
 
-.moyen{
-    position: absolute;
-    bottom: 10%;
-    overflow: hidden;
-    z-index: -1;
-    opacity: 80%;
+.moyen {
+  position: absolute;
+  bottom: 10%;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 80%;
 }
 
-.bas{
-    position: absolute;
-    bottom: 0px;
-    overflow: hidden;
-    opacity: 100%;
-    z-index: -1;
-    
+.bas {
+  position: absolute;
+  bottom: 0px;
+  overflow: hidden;
+  opacity: 100%;
+  z-index: -1;
 }
-button{
-    width: 200px;
-    height: 36px;
-}
-
-
-
-.wrapper{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none
-    
-}
-.box div{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: #00272B ;
-    opacity: 30%;
-    overflow: hidden;
-    box-shadow: 0 0 10px black;
-    
-    
+button {
+  width: 200px;
+  height: 36px;
 }
 
-.box div:nth-child(1){
-    top: 12%;
-    left: 22%;
-    animation: animate 10s linear infinite;
-    border-radius: 50%;
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.box div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #00272b;
+  opacity: 30%;
+  overflow: hidden;
+  box-shadow: 0 0 10px black;
 }
 
-.box div:nth-child(2){
-    top: 70%;
-    left: 90%;
-    animation: animate 7s linear infinite;
-    border-radius: 50%;
+.box div:nth-child(1) {
+  top: 12%;
+  left: 22%;
+  animation: animate 10s linear infinite;
+  border-radius: 50%;
 }
-.box div:nth-child(3){
-    top: 17%;
-    left: 6%;
-    animation: animate 9s linear infinite;
-    border-radius: 50%;
-}
-.box div:nth-child(4){
-    top: 20%;
-    left: 75%;
-    animation: animate 10s linear infinite;
-    border-radius: 50%;
-}
-.box div:nth-child(5){
-    top: 67%;
-    left: 10%;
-    animation: animate 6s linear infinite;
-    border-radius: 50%;
-}
-.box div:nth-child(6){
-    top: 80%;
-    left: 75%;
-    animation: animate 12s linear infinite;
-    border-radius: 50%;
-    
-}
-.box div:nth-child(7){
-    top: 60%;
-    left: 80%;
-    animation: animate 15s linear infinite;
-    border-radius: 50%;
-}
-.box div:nth-child(8){
-    top: 32%;
-    left: 20%;
-    animation: animate 16s linear infinite;
-    border-radius: 50%;
-}
-.box div:nth-child(9){
-    top: 90%;
-    left: 20%;
-    animation: animate 9s linear infinite;
-    border-radius: 50%;
-}
-.box div:nth-child(10){
-    top: 50%;
-    left: 72%;
-    animation: animate 12s linear infinite;
-    border-radius: 50%;
-}
-@keyframes animate{
-    0%{
-        transform: scale(0) translateY(0) rotate(0);
-        opacity: 1;
-    }
-    100%{
-        transform: scale(1.3) translateY(-90px) rotate(360deg);
-        opacity: 1;
-    }
 
+.box div:nth-child(2) {
+  top: 70%;
+  left: 90%;
+  animation: animate 7s linear infinite;
+  border-radius: 50%;
+}
+.box div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+  border-radius: 50%;
+}
+.box div:nth-child(4) {
+  top: 20%;
+  left: 75%;
+  animation: animate 10s linear infinite;
+  border-radius: 50%;
+}
+.box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+  border-radius: 50%;
+}
+.box div:nth-child(6) {
+  top: 80%;
+  left: 75%;
+  animation: animate 12s linear infinite;
+  border-radius: 50%;
+}
+.box div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+  border-radius: 50%;
+}
+.box div:nth-child(8) {
+  top: 32%;
+  left: 20%;
+  animation: animate 16s linear infinite;
+  border-radius: 50%;
+}
+.box div:nth-child(9) {
+  top: 90%;
+  left: 20%;
+  animation: animate 9s linear infinite;
+  border-radius: 50%;
+}
+.box div:nth-child(10) {
+  top: 50%;
+  left: 72%;
+  animation: animate 12s linear infinite;
+  border-radius: 50%;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 1;
+  }
 }

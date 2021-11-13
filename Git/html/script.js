@@ -382,10 +382,16 @@ function goToChapter(chapterName) {
 
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img" />`;
   let txtButton = "";
-
+  
    if(chaptersObj[chapterName].video !== undefined){
-     image.innerHTML = `<video src="${chaptersObj[chapterName].video}" controls alt="video" />`;
+     image.innerHTML = `<video width="400" height="300" controls src=
+     "${chaptersObj[chapterName].video}">
+              Browser not supported
+             </video>`;
+             
    }
+   let video = image.innerHTML;
+   image.autoplay = true;
 
   for (let index = 0; index < chaptersObj[chapterName].options.length; index++) {
     const choice = chaptersObj[chapterName].options[index].action;

@@ -6,7 +6,7 @@ let chaptersObj = {
     subtitle: "L'arrivée",
     text: "Vous arrivez dans un magasin grande surface alors que vous avez passé un très mauvaise journée. Vous devez donc relâcher votre stresse sur des employés qui n'ont rien demandé. Vous aurez gagné lorsque vous aurez entré dans le magasin, embêter le plus de personnes possible et que vous serai sorti sans avoir de problèmes. Saurez-vous bien vous déstresser?",
     img: "Images/jpg/succ-accueil-corpo.jpg",
-    video: ,
+    // video: ,
     options: [{
         text: "Douter des compétences de l'employé",
         action: "goToChapter(`deux_mille`)"
@@ -383,9 +383,9 @@ function goToChapter(chapterName) {
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img" />`;
   let txtButton = "";
 
-  if(chaptersObj[chapterName].video !== undefined){
-    image.innerHTML = something;
-  }
+  // if(chaptersObj[chapterName].video !== undefined){
+  //   image.innerHTML = something;
+  // }
 
   for (let index = 0; index < chaptersObj[chapterName].options.length; index++) {
     const choice = chaptersObj[chapterName].options[index].action;

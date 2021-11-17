@@ -393,7 +393,7 @@ function goToChapter(chapterName) {
   let text = document.querySelector(".txt");
   let image = document.querySelector(".visuel");
   let choices = document.querySelector(".boutons-ligne1");
-  const transition = new Audio("fx/transition.mp3");
+  const transition = new Audio("audio/OMG.mp3");
   chapter.innerText = chaptersObj[chapterName].subtitle;
   text.innerText = chaptersObj[chapterName].text;
 

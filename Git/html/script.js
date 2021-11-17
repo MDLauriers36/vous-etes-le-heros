@@ -1,3 +1,19 @@
+let crier = false;
+
+
+function condition2() {
+  crier = true;
+  localStorage.setItem("key", `${crier}`);
+  gotochapter(`jouer_victime_true`);
+}
+
+function condition() {
+  if (crier == true) {
+    goToChapter(`jouer_victime_true`);
+  } else {
+    goToChapter(`jouer_victime`);
+  }
+}
 let chaptersObj = {
 
 
@@ -330,7 +346,7 @@ let chaptersObj = {
   },
 
   clé: {
-    subtitle: "Partie Perdue",
+    subtitle: "Question piège?",
     text: "Alors que vous conversez avec l'employé, voulez-vous lui crier dessus?",
     img: "Images/Gif/pote_waifu2x_2x_2n.gif",
     options: [{
@@ -377,6 +393,7 @@ function goToChapter(chapterName) {
   let text = document.querySelector(".txt");
   let image = document.querySelector(".visuel");
   let choices = document.querySelector(".boutons-ligne1");
+  const transition = new Audio("fx/transition.mp3");
   chapter.innerText = chaptersObj[chapterName].subtitle;
   text.innerText = chaptersObj[chapterName].text;
 
@@ -385,13 +402,11 @@ function goToChapter(chapterName) {
   
    if(chaptersObj[chapterName].video !== undefined){
      image.innerHTML = `<video width="400" height="300" controls src=
-     "${chaptersObj[chapterName].video}">
+     "${chaptersObj[chapterName].video}" autoplay loop muted>
               Browser not supported
              </video>`;
              
    }
-   let video = image.innerHTML;
-   image.autoplay = true;
 
   for (let index = 0; index < chaptersObj[chapterName].options.length; index++) {
     const choice = chaptersObj[chapterName].options[index].action;
@@ -399,24 +414,28 @@ function goToChapter(chapterName) {
   }
   choices.innerHTML = txtButton;
   
-
+  choices.addEventListener("click", function () {
+    transition.play();
+  });
 
 
 }
 
-let crier = false;
+
 
 function victimeCrie() {
   crier = true;
   goToChapter(`jouer_victime`);
 }
 
-function condition() {
-  if (crier = true) {
-    goToChapter(`jouer_victime_true`);
-  } else {
-    goToChapter(`jouer_victime`);
-  }
+
+let save = "";
+if (save != undefined) {
+  save = localStorage.getItem("chapter");
+  
+  localStorage.getItem("crie", `${crier}`);
+} else {
+  goToChapter("premier_chapitre");
 }
 
 

@@ -256,3 +256,18 @@ button{
     }
 
 }
+
+label.container{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    background-color: white;
+}
+
+.submit{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: white;
+    
+}

@@ -1,10 +1,15 @@
 let crier = false;
 
+function reset() {
+  crier = false;
+  localStorage.clear();
+  goToChapter(`premier_chapitre`);
+}
 
 function condition2() {
   crier = true;
   localStorage.setItem("key", `${crier}`);
-  gotochapter(`jouer_victime_true`);
+  goToChapter(`jouer_victime_true`);
 }
 
 function condition() {
@@ -394,6 +399,8 @@ function goToChapter(chapterName) {
   let image = document.querySelector(".visuel");
   let choices = document.querySelector(".boutons-ligne1");
   const transition = new Audio("audio/OMG.mp3");
+  const son = document.getElementById('check');
+  const effacer = document.getElementById('submit');
   chapter.innerText = chaptersObj[chapterName].subtitle;
   text.innerText = chaptersObj[chapterName].text;
 
@@ -416,6 +423,18 @@ function goToChapter(chapterName) {
   
   choices.addEventListener("click", function () {
     transition.play();
+
+    
+
+  if(son.checked == true){
+    console.log("good");
+} else{
+  transition.pause();
+}
+
+effacer.addEventListener("click", function(){
+  reset();
+})
   });
 
 

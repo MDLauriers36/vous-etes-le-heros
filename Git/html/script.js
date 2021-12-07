@@ -393,7 +393,7 @@ let chaptersObj = {
 
 
 function goToChapter(chapterName) {
-
+  const body = document.querySelector('body');
   let chapter = document.getElementById("titre");
   let text = document.querySelector(".txt");
   let image = document.querySelector(".visuel");
@@ -404,8 +404,11 @@ function goToChapter(chapterName) {
   chapter.innerText = chaptersObj[chapterName].subtitle;
   text.innerText = chaptersObj[chapterName].text;
 
+  body.className = chapterName;
+  
   image.innerHTML = `<img src="${chaptersObj[chapterName].img}" alt="chapter_img" />`;
   let txtButton = "";
+  
   
    if(chaptersObj[chapterName].video !== undefined){
      image.innerHTML = `<video width="400" height="300" controls src=

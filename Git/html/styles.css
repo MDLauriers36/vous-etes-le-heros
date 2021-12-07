@@ -66,7 +66,7 @@ img{
     width: 80%;
     height: 80px;
     background-color: #bf8d6e;
-    
+    text-align: center;
     margin: auto;
     margin-top: 0;
     
@@ -271,3 +271,29 @@ label.container{
     background-color: white;
     
 }
+.finale{
+    background-color: red;
+    animation: couleur 5s infinite;
+}
+.finale .box div {
+    background-color: #555B6E;
+}
+
+.finale .bloc_central{
+    
+    background-color: #374A67;
+}
+.finale .txt{
+    background-color: #F1DEDE;
+}
+@keyframes couleur {
+    0%{
+        background-color: #20A9E3;
+    }
+    50% {
+        background-color: #EF2476;
+      }
+      100%{
+        background-color: #20A9E3;
+    }
+  }

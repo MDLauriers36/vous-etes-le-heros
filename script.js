@@ -25,7 +25,7 @@ let chaptersObj = {
     // Chapitres
     premier_chapitre: {
         subtitle: "L'arrivée",
-        text: "Vous arrivez dans un magasin grande surface alors que vous avez passé un très mauvaise journée. Vous devez donc relâcher votre stresse sur des employés qui n'ont rien demandé. Vous aurez gagné lorsque vous aurez entré dans le magasin, embêter le plus de personnes possible et que vous serai sorti sans avoir de problèmes. Saurez-vous bien vous déstresser?",
+        text: "Vous arrivez dans un magasin grande surface alors que vous avez passé un très mauvaise journée. Vous devez donc relâcher votre stresse sur des employés qui n'ont rien demandé. Vous aurez gagné lorsque vous aurez entré le magasin, embêter le plus de personnes possible et que vous serai sorti sans avoir de problèmes. Saurez-vous bien vous déstresser?",
         img: "Images/jpg/succ-accueil-corpo.jpg",
         video: "Images/video/un.mp4",
         options: [{
